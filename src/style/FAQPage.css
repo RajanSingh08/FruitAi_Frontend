@@ -1,0 +1,94 @@
+.faq-container {
+  width: 100%;
+  max-width: 375px;
+  height: 80vh; /* Set a height relative to viewport height */
+  border-radius: 50px 0 0 0;
+  background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto; /* Center the container */
+  overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+.faq-title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  display: flex;
+  background: #EAEFEBCC;
+  border: 0.5px solid #D2E7FF80;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: center;
+  gap: 10px; /* Add space between image and content */
+  opacity: 1; /* Make visible */
+}
+
+.faq-image {
+  width: auto;
+  max-width: 80px; /* Adjusted to fit within the smaller .faq-item */
+  height: auto;
+  border-radius: 10px;
+}
+
+.faq-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faq-question {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px; /* Adjusted to fit within the smaller .faq-item */
+  font-weight: 700;
+  color: #EE0A22;
+  padding: 2px; /* Adjusted for the smaller item */
+}
+
+.faq-answer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 8px; /* Adjusted to fit within the smaller .faq-item */
+  font-weight: 400;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .faq-container {
+    padding: 10px;
+    height: 90vh; /* Increase height for smaller screens */
+  }
+
+  .faq-title {
+    font-size: 20px;
+  }
+
+  .faq-item {
+    width: 100%; /* Adjust width for small screens */
+    height: auto; /* Allow height to adjust based on content */
+    gap: 10px; /* Maintain spacing between image and content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+  }
+
+  .faq-image {
+    max-width: 100px; /* Further limit image size */
+    margin-bottom: 10px; /* Space between image and text */
+  }
+
+  .faq-question {
+    font-size: 12px;
+  }
+
+  .faq-answer {
+    font-size: 11px;
+  }
+}

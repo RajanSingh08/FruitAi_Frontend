@@ -1,0 +1,140 @@
+/* Reset and global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 375px;
+    padding: 20px;
+    margin: 0 auto; /* Center the container */
+    background-color: #fff; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  p {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0; /* Space above and below the text */
+  }
+  
+  label {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    display: block; /* Ensure label is on its own line */
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Full width of the container */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .remember-forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Full width */
+    font-size: 14px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .touch-id {
+    background-color: #007bff;; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width of the container */
+  }
+  
+  .touch-id:hover {
+    background-color:#007bff;; /* Darker shade on hover */
+  }
+  
+  .touch-id-inner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .touch-id img {
+    width: 38px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px; /* Space between icon and text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 400px) {
+    .login-container {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    button[type="submit"],
+    .touch-id {
+      font-size: 14px;
+      padding: 12px; /* Increase padding for better touch target */
+    }
+  
+    input {
+      font-size: 14px; /* Increase font size for better readability */
+    }
+  
+    .remember-forget {
+      font-size: 14px; /* Increase font size for better readability */
+    }
+  }
+  

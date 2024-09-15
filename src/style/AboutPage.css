@@ -1,0 +1,64 @@
+.about-container {
+    width: 100%;
+    max-width: 500px; /* Limit maximum width */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    background: white;
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .about-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  .about-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5; /* Improved readability */
+    margin-bottom: 20px;
+  }
+  
+  .about-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    background-color:black; /* Button color */
+    color: white; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .about-button:hover {
+    background-color: #d0091a; /* Darker shade on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .about-title {
+      font-size: 20px; /* Smaller title on mobile */
+    }
+  
+    .about-heading {
+      font-size: 18px; /* Smaller heading on mobile */
+    }
+  
+    .about-description {
+      font-size: 12px; /* Smaller description on mobile */
+    }
+  
+    .about-button {
+      font-size: 14px; /* Smaller button text on mobile */
+    }
+  }
+  

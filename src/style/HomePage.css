@@ -1,0 +1,128 @@
+/* Home Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
+}
+.home-page {
+    text-align: center;
+    min-height: 100vh;
+    padding: 0 1rem; /* Add padding for smaller screens */
+}
+
+/* Main Section Styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 1rem;
+}
+
+/* Grid Container Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 1000px; /* Adjusted width to accommodate more items */
+    margin: 0 auto;
+}
+
+/* Grid Item Styles */
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 1rem;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    height: 150px; /* Ensure equal height for all items */
+}
+
+/* Specific Background Colors */
+.item-chat, .item-faqs, .item-about, .item-g_translate, .item-color1, .item-color2 {
+    height: 150px; /* Ensure equal height for all items */
+}
+
+/* Grid Item Background Colors */
+.item-chat {
+    background-color: #ffda8b;
+}
+
+.item-faqs {
+    background-color: #d891ff;
+}
+
+.item-about {
+    background-color: #eb9ef6;
+}
+
+.item-g_translate {
+    background-color: #87f4eb;
+}
+
+.item-color1 {
+    background-color: #c5fba8;
+}
+
+.item-color2 {
+    background-color: #7af491;
+}
+
+/* Link Styles */
+.grid-item a {
+    text-decoration: none;
+    color: white;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.grid-item a:hover {
+    color: #333;
+}
+
+/* Responsive Design: Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+        grid-template-rows: repeat(3, 1fr); /* Three rows layout for 2x3 grid */
+    }
+
+    .grid-item {
+        font-size: 18px; /* Adjust font size for mobile */
+        line-height: 24px;
+    }
+}
+
+/* Style for the Google Translate logo */
+.translate-logo {
+    width: 80px; /* Adjust the width to fit inside the rectangle box */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ensure the grid item (rectangle box) keeps its original size */
+.item-g_translate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Keep the height of the box */
+    border-radius: 8px;
+}
+
+/* Mobile adjustments for the logo size */
+@media (max-width: 768px) {
+    .translate-logo {
+        width: 60px; /* Adjust size for mobile view */
+        height: auto;
+    }
+}

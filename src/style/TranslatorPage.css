@@ -1,0 +1,33 @@
+.translation-app {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.translated-text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
